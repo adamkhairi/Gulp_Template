@@ -9,14 +9,11 @@ const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 
-
-
 // File paths
 const files = {
     scssPath: 'app/scss/**/*.scss',
     jsPath: 'app/js/**/*.js'
 }
-
 // Sass task: compiles the style.scss file into style.css
 function scssTask() {
     return src(files.scssPath)
