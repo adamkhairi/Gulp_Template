@@ -24,11 +24,10 @@ let score = document.getElementById("score-global");
 let result = document.getElementById('result');
 
 
-console.log(tools);
 ///////////////////////
 for (let i = 0; i < 3; i++) {
     tools[i].addEventListener("click", function () {
-        console.log(i);
+    
         // /////// USER /////
         section.style.display = "none";
         const child1 = document.createElement("img");
