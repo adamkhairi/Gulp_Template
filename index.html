@@ -1,58 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="src/css/style.css" />
-        <link
-          href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-          rel="stylesheet"
-        />
-        <title>Document</title>
-      </head>
-      <body>
-        <!-- Score Informations -->
-        <header>
-          <div class="title">
-            <h1>Rock PAPER SCISSORS</h1>
-          </div>
-          <div class="score">
-            <p>SCORE</p>
-            <h1 id="score-global">0</h1>
-          </div>
-        </header>
-        <!-- Section -->
-        <section id="section">
-          <div class="paper icon">
-            <img src="src/img/icon-paper.svg" alt="" />
-          </div>
-          <div class="scissors icon">
-            <img src="src/img/icon-scissors.svg" alt="" />
-          </div>
-          <div class="rock icon">
-            <img src="src/img/icon-rock.svg" alt="" />
-          </div>
-        </section>
-        <!-- Choises -->
-        <section id="choices ">
-          <div class="user"></div>
-          <div >
-            <h1 id="result"></h1>
-            <input type="submit" value="Play again" id="rst" style="display: none;">
-          </div>
-          <div class="cpu"></div>
-        </section>
-        <!-- Rules -->
-        <div class="rules">
-          <div class="rules-menu">
-            <h1>Rules</h1>
-            <a href="#" id="exit" onclick="popUp()">
-              <h2>X</h2>
-            </a>
-          </div>
-          <img src="src/img/image-rules.svg" alt="" />
-        </div>
-        <input type="submit" value="Rules" id="rules" onclick="popUp()" />
-        <script src="src/js/general.js"></script>
-      </body>
-    </html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Score Informations -->
+    <header>
+      <div class="title">
+        <h1>Rock PAPER SCISSORS</h1>
+      </div>
+      <div class="score">
+        <p>SCORE</p>
+        <h1 id="score-global">0</h1>
+      </div>
+    </header>
+    <!-- Section -->
+    <section id="section">
+      <div class="paper icon">
+        <img src="src/img/icon-paper.svg" alt="" />
+      </div>
+      <div class="scissors icon">
+        <img src="src/img/icon-scissors.svg" alt="" />
+      </div>
+      <div class="rock icon">
+        <img src="src/img/icon-rock.svg" alt="" />
+      </div>
+    </section>
+    <!-- Choises -->
+    <section id="choices">
+      <div class="user"></div>
+      <div>
+        <h1 id="result"></h1>
+        <input type="submit" value="Play again" id="rst" onclick="reset()" />
+      </div>
+      <div class="cpu"></div>
+    </section>
+    <!-- Rules -->
+    <div class="rules">
+      <div class="rules-menu">
+        <h1>Rules</h1>
+        <a href="#" id="exit" onclick="popUp()">
+          <h2>X</h2>
+        </a>
+      </div>
+      <img src="src/img/image-rules.svg" alt="" />
+    </div>
+    <input type="submit" value="Rules" id="rules" onclick="popUp()" />
+    <script src="src/js/general.js"></script>
+  </body>
+</html>
